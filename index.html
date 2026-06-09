@@ -11,13 +11,54 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		
 		<style>
 		h2
 		{
-			letter-spacing: 1px;
-			line-height: 10px;
+		    letter-spacing: 1px;
+		    line-height: 10px;
 		}
-		</style>
+
+		/* Responsive research images */
+		.research-content {
+		    width: 100%;
+		}
+		
+		.research-figure {
+		    width: 100%;
+		    margin: 2rem auto;
+		    text-align: center;
+		}
+	
+		.research-figure img {
+		    display: block;
+		    width: 100%;
+		    max-width: 100%;
+		    height: auto;
+		    margin: 0 auto;
+		    border-radius: 6px;
+		}
+		
+		.research-figure figcaption {
+		    margin-top: 0.6rem;
+		    font-size: 0.85rem;
+		    line-height: 1.4;
+		    color: rgba(255, 255, 255, 0.75);
+		    text-align: center;
+		}
+	
+		@media screen and (max-width: 736px) {
+		    .research-figure {
+		        margin: 1.4rem auto;
+		    }
+		
+		    .research-figure figcaption {
+		        font-size: 0.78rem;
+		        padding: 0 0.3rem;
+		    }
+		}
+	</style>
+
 	</head>
 	<body class="is-preload">
 
@@ -109,16 +150,59 @@
 								</article>
 
 						<!-- Research -->
-							<article id="research">
-								<h2 class="major">RESEARCH</h2>
-								<ul>
-									<p> The advent of multi-messenger astronomy has opened a new window for exploring the physics of gamma-ray burst (GRB) afterglows. GRBs are a prime source of relativistic shocks and potential sites of ultra-high-energy cosmic rays. Recent detections of very-high-energy (VHE; $\gtrsim 100$ GeV) afterglows by MAGIC and H.E.S.S. challenge standard synchrotron afterglow models and point toward synchrotron self-Compton (SSC) emission, while the role of jet structure, circumburst medium, and viewing geometry in shaping VHE and neutrino signals remains poorly constrained. In this thesis, we investigate the multi-messenger prospects of VHE GRB afterglows within an external forward-shock framework, linking their electromagnetic (EM)  signatures, joint detectability of short GRB–GW events with the next-generation gamma-ray observatory Cherenkov Telescope Array (CTA) and GW detectors, and further explore the associated high-energy neutrino emission, including off-axis contributions and upper limit sensitivities.</p>
-									<p>n the first part of this thesis, we study VHE emission from GRB afterglows implementing a VHE SSC model where an adiabatically expanding blast wave interacts with a homogeneous ISM. We explore a multidimensional parameter that evaluates CTA detectability of sub-TeV photons, showing that jets with higher kinetic energy or larger bulk Lorentz factors in dense medium are most favourable. Distinct slow and fast cooling regimes are identified, where the SSC peak flux increases or decreases, respectively, with the downstream magnetic energy fraction. The model successfully reproduces the VHE afterglow of GRB~190114C, and our results indicate strong CTA detection prospects for TeV-bright long GRBs.</p>
-									<p>In the second part of the thesis, we develop a Gaussian structured-jet model that predicts off-axis VHE afterglow through SSC emission, incorporating Klein–Nishina effects, internal pair-production absorption, and extragalactic background light attenuation. Using this framework, we investigate the joint detection prospects of short GRBs-GW events with CTA during the upcoming LIGO O5 run. We simulate binary neutron star merger (BNS) events to evaluate the conditions under which CTA can detect the associated VHE afterglows. By combining the differential flux sensitivity of CTA at 250 GeV with the improved sensitivity of the LIGO O5 run, we identify the regions of afterglow parameter space that favour joint detection. We also examine how variations in kinetic energy, ambient density, magnetic energy fraction, electron energy fraction, and viewing geometry influence TeV-band detectability through SSC light curves. Based on these simulations, we estimate the expected joint CTA–LIGO detection rates for BNS mergers for the upcoming O5 run. Our model explains multi-wavelength data for short GRB~160821B, indicating a faint but potentially observable SSC component in the TeV range for prompt CTA follow-up. For GRB~221009A, the fitting yields a mildly off-axis, SSC-dominated jet that matches AGILE-GRID and LHAASO data. Extending our analysis, we develop a Gaussian structured jet wind-driven medium and analyse how jet geometry, energetics, and microphysics affect light curves and CTA detectability. We then fit the wind model to X-ray, GeV, and TeV observations of GRB~221009A.</p>
-									<p>To complete the multi-messenger picture of GRB afterglows, we estimate the PeV–EeV neutrino flux at Earth, including flavour oscillations, produced through photohadronic interactions in the external shock. We have primarily showcased here how Gaussian structured jets affect the neutrino flux, along with EM counterparts of the GRB, and estimated the time-integrated upper limit sensitivity curve for a point-like source, based on the upcoming neutrino detectors IceCube-Gen2 and GRAND200k. Based on this model, we calculate the neutrino flux for GRB 221009A, which lies well below the point-source upper limit for the given neutrino detectors. Furthermore, a parameter-space study reveals that higher kinetic energy, denser circumburst medium, and larger fractions of electron, magnetic, and proton energy overall increase the number of neutrino events. Our results probe an optimistic scenario in which energetic, nearby, and efficiently baryon-loaded bursts are likely to produce detectable neutrino counterparts. In addition to these high-energy neutrino detectors, the next-generation water Cherenkov detector Hyper-Kamiokande will also be capable of searching for GeV–TeV neutrinos from relatively nearby GRBs at distances up to about 100 Mpc. In the final part of this thesis, we extend our study to the geometry and performance of the Intermediate Water Cherenkov Detector (IWCD) for Hyper-Kamiokande, with a focus on electron-neutrino event reconstruction. Using advanced machine-learning methods, we develop a novel analysis framework that provides significantly improved signal purity and efficiency compared to traditional reconstruction algorithms.</p>
-									<p>My thesis provides a unified framework for interpreting GRB afterglows across electromagnetic, gravitational-wave, and neutrino channels, strengthening the foundations of next-generation multi-messenger astronomy.</p>
-								</ul>
-							</article>
+						<article id="research">
+						    <h2 class="major">RESEARCH</h2>
+						
+						    <div class="research-content">
+						
+						        <p>
+						            The advent of multi-messenger astronomy has opened a new window for exploring the physics of gamma-ray burst (GRB) afterglows. GRBs are a prime source of relativistic shocks and potential sites of ultra-high-energy cosmic rays. Recent detections of very-high-energy (VHE; &gtrsim; 100 GeV) afterglows by MAGIC and H.E.S.S. challenge standard synchrotron afterglow models and point toward synchrotron self-Compton (SSC) emission, while the role of jet structure, circumburst medium, and viewing geometry in shaping VHE and neutrino signals remains poorly constrained. In this thesis, we investigate the multi-messenger prospects of VHE GRB afterglows within an external forward-shock framework, linking their electromagnetic (EM) signatures, joint detectability of short GRB–GW events with the next-generation gamma-ray observatory Cherenkov Telescope Array (CTA) and GW detectors, and further explore the associated high-energy neutrino emission, including off-axis contributions and upper-limit sensitivities.
+						        </p>
+						
+						        <figure class="research-figure">
+						            <img src="images/res1.png" alt="Schematic illustration of multi-messenger emission from a GRB relativistic jet." loading="lazy" decoding="async">
+						            <figcaption>
+						                Schematic view of multi-messenger emission from a GRB relativistic jet, including shock-accelerated particles, electromagnetic radiation, and high-energy neutrinos.
+						            </figcaption>
+						        </figure>
+						
+						        <p>
+						            In the first part of this thesis, we study VHE emission from GRB afterglows by implementing a VHE SSC model where an adiabatically expanding blast wave interacts with a homogeneous ISM. We explore a multidimensional parameter space to evaluate CTA detectability of sub-TeV photons, showing that jets with higher kinetic energy or larger bulk Lorentz factors in dense media are most favourable. Distinct slow- and fast-cooling regimes are identified, where the SSC peak flux increases or decreases, respectively, with the downstream magnetic energy fraction. The model successfully reproduces the VHE afterglow of GRB&nbsp;190114C, and our results indicate strong CTA detection prospects for TeV-bright long GRBs.
+						        </p>
+						
+						        <p>
+						            In the second part of the thesis, we develop a Gaussian structured-jet model that predicts off-axis VHE afterglow through SSC emission, incorporating Klein–Nishina effects, internal pair-production absorption, and extragalactic background light attenuation. Using this framework, we investigate the joint detection prospects of short GRB–GW events with CTA during the upcoming LIGO O5 run. We simulate binary neutron star merger (BNS) events to evaluate the conditions under which CTA can detect the associated VHE afterglows. By combining the differential flux sensitivity of CTA at 250 GeV with the improved sensitivity of the LIGO O5 run, we identify the regions of afterglow parameter space that favour joint detection. We also examine how variations in kinetic energy, ambient density, magnetic energy fraction, electron energy fraction, and viewing geometry influence TeV-band detectability through SSC light curves. Based on these simulations, we estimate the expected joint CTA–LIGO detection rates for BNS mergers for the upcoming O5 run. Our model explains multi-wavelength data for short GRB&nbsp;160821B, indicating a faint but potentially observable SSC component in the TeV range for prompt CTA follow-up. For GRB&nbsp;221009A, the fitting yields a mildly off-axis, SSC-dominated jet that matches AGILE-GRID and LHAASO data. Extending our analysis, we develop a Gaussian structured-jet model in a wind-driven medium and analyse how jet geometry, energetics, and microphysics affect light curves and CTA detectability. We then fit the wind model to X-ray, GeV, and TeV observations of GRB&nbsp;221009A.
+						        </p>
+						
+						        <figure class="research-figure">
+						            <img src="images/res2.png" alt="Spectral energy distribution of GRB 221009A with AGILE-GRID and LHAASO data." loading="lazy" decoding="async">
+						            <figcaption>
+						                Broadband spectral energy distribution of GRB&nbsp;221009A, showing the GeV–TeV afterglow emission together with AGILE-GRID and LHAASO measurements.
+						            </figcaption>
+						        </figure>
+						
+						        <p>
+						            To complete the multi-messenger picture of GRB afterglows, we estimate the PeV–EeV neutrino flux at Earth, including flavour oscillations, produced through photohadronic interactions in the external shock. We primarily show how Gaussian structured jets affect the neutrino flux, along with the EM counterparts of the GRB, and estimate the time-integrated upper-limit sensitivity curve for a point-like source based on the upcoming neutrino detectors IceCube-Gen2 and GRAND200k. Based on this model, we calculate the neutrino flux for GRB&nbsp;221009A, which lies well below the point-source upper limit for the given neutrino detectors. Furthermore, a parameter-space study reveals that higher kinetic energy, denser circumburst medium, and larger fractions of electron, magnetic, and proton energy overall increase the number of neutrino events. Our results probe an optimistic scenario in which energetic, nearby, and efficiently baryon-loaded bursts are likely to produce detectable neutrino counterparts.
+						        </p>
+						
+						        <p>
+						            In addition to these high-energy neutrino detectors, the next-generation water Cherenkov detector Hyper-Kamiokande will also be capable of searching for GeV–TeV neutrinos from relatively nearby GRBs at distances up to about 100 Mpc. In the final part of this thesis, we extend our study to the geometry and performance of the Intermediate Water Cherenkov Detector (IWCD) for Hyper-Kamiokande, with a focus on electron-neutrino event reconstruction. Using advanced machine-learning methods, we develop a novel analysis framework that provides significantly improved signal purity and efficiency compared to traditional reconstruction algorithms.
+						        </p>
+						
+						        <figure class="research-figure">
+						            <img src="images/res3.png" alt="Confusion matrix showing machine-learning classification performance for Hyper-Kamiokande IWCD event reconstruction." loading="lazy" decoding="async">
+						            <figcaption>
+						                Representative confusion matrix from the machine-learning-based event-classification framework developed for electron-neutrino reconstruction studies in the Hyper-Kamiokande IWCD.
+						            </figcaption>
+						        </figure>
+						
+						        <p>
+						            My thesis provides a unified framework for interpreting GRB afterglows across electromagnetic, gravitational-wave, and neutrino channels, strengthening the foundations of next-generation multi-messenger astronomy.
+						        </p>
+						
+						    </div>
+						</article>
+
 
 						<!-- Publication -->
 						<article id="publication">
